@@ -2,9 +2,9 @@
 Contributors: edmond tiendrebeogo, dezmonde, dezmonde agence web
 Donate link: http://api.baoyam.com/wordpress/faire-un-don/
 Tags: proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
-Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 2.5.3
+Requires at least: 2.2.0
+Tested up to: 3.3.1
+Stable tag: 3.3.1
 License: GPLv2 or later
 
 Permet d'ajouter &agrave; votre site des proverbes et des citations issus du site baoyam.com
