@@ -7,8 +7,7 @@ Tested up to: 3.1
 Stable tag: 2.5.3
 License: GPLv2 or later
 
-Permet d'ajouter &agrave; votre site des proverbes ou des citations issus du site : Baoyam Sagesse (http://sagesse.baoyam.com). Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citation de fa&ccedil;on al&eacute;atoire.
-
+Permet d'ajouter &agrave; votre site des proverbes ou des citations issus du site baoyam.com
 == Description ==
 
 Permet d'ajouter &agrave; votre site des proverbes ou des citations issus du site : Baoyam Sagesse (http://sagesse.baoyam.com). Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citation de fa&ccedil;on al&eacute;atoire.
