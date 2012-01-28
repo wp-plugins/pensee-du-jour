@@ -7,7 +7,7 @@ Tested up to: 3.3.1
 Stable tag: 3.3.1
 License: GPLv2 or later
 
-Permet d'afficher sur votre site ou &agrave; votre blog des proverbes et des citations c&eacute;l&egrave;bres.
+Permet d'afficher sur votre site ou votre blog des proverbes et des citations c&eacute;l&egrave;bres.
 == Description ==
 
 Permet d'ajouter &agrave; votre site des proverbes et des citations issus du site Baoyam Sagesse : www.baoyam.com. Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citation de fa&ccedil;on al&eacute;atoire.
