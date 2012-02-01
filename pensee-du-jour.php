@@ -2,8 +2,8 @@
    /*
    Plugin Name: Pens&eacute;e du jour
    Plugin URI: http://api.baoyam.com/wordpress/plugin/
-   Description: Permet d'ajouter &agrave; votre site des proverbes ou des citations issus du site <a href="http://sagesse.baoyam.com">Baoyam Sagesse</a>. Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citations de fa&ccedil;on al&eacute;atoire.
-   Version: 1.0
+   Description: Permet d'afficher sur votre site ou votre blog des proverbes et des citations c&eacute;l&egrave;bres.</a>. Ce extension installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citations de fa&ccedil;on al&eacute;atoire.
+   Version: 2.0
    Author: Dezmonde Agence Web
    Author URI: http://www.dezmonde.net
    License: GPL2 or later
@@ -25,7 +25,7 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     */
    
-    define('PENSEE_DU_JOUR_VERSION', '2.5.3');
+    define('PENSEE_DU_JOUR_VERSION', '2.0');
     define('PENSEE_DU_JOUR_PLUGIN_URL', plugin_dir_url( __FILE__ ));
     
     function fctAPIURLDecode($strText){        
@@ -36,6 +36,8 @@
        }       
        return $strOut ;
 	}
+    
+    //Widegt section
     
 function fctWidgetPenseeDuJourDisplayBody($arrOptions){
   $intType = $arrOptions['type'] ;
@@ -155,5 +157,75 @@ $options = array(
 EOT;
     echo $strMesssage ;
 
+}
+
+    //Shotcode section
+    //[pensee type=2]
+    function fctShortCodePenseeDuJour( $atts ) {
+	extract( shortcode_atts( array(
+		'type' => '1',
+		'HSQGDJH' => 'something else',
+	), $atts ) );
+
+	//return "foo = {$foo}";
+
+	$intType = (int) $type ;
+    if( ($intType < 1) ||  ($intType > 4)  ){
+        return "Short code error !" ;
+    }
+    //return "type = $type == $intType" ;
+    $strOutput = file_get_contents("http://baoyam.com/wisdom/fr/api-wp-plugin.php?key=rnYWeGokw782qsm7dHj946n0NAleoddd_jhqhhgd2wXbfgmsnrltA&type={$intType}&src=wp");
+    $strOutput =   fctAPIURLDecode( $strOutput );
+    return $strOutput;
+}
+    add_shortcode( 'pensee', 'fctShortCodePenseeDuJour' );
+    
+    
+    
+    ///Admin panel section
+    add_action('admin_menu', 'fctAdminPanelMenuPenseeDuJour');
+
+function fctAdminPanelMenuPenseeDuJour() {
+	add_options_page('Pens&eacute;e du jour', 'Pens&eacute;e du jour', 'manage_options', 'pensee-du-jour-admin-panel-1', 'fctAdminPanelMenuPenseeDuJourOptions');
+}
+
+function admin_register_head() {
+    $siteurl = get_option('siteurl');
+    $url = PENSEE_DU_JOUR_PLUGIN_URL . 'admin.css';
+    echo "<link rel='stylesheet' type='text/css' href='$url' />\n";
+}
+add_action('admin_head', 'admin_register_head');
+
+function fctAdminPanelMenuPenseeDuJourOptions() {
+	if (!current_user_can('manage_options'))  {
+		wp_die( __('You do not have sufficient permissions to access this page.') );
+	}
+    $strOutput = <<<EOT
+<div class="pensee-du-jour-admin-panel-1">
+<h2>Pens&eacute; du jour</h2>
+Merci d'avoir install&eacute; l'extension  <b>Pens&eacute; du jour</b>. 
+<p>
+    <b>Pens&eacute; du jour</b> vous permet d'afficher sur votre site ou blog des proverbes et des citations issus de <a href="http://sagesse.baoyam.com">Baoyam</a>. <b>Baoyam</b> est un site de partage de partage de milliers proverbes, citations, po&egrave;mes blagues et devinettes. 
+</p>
+<p>
+    <b>Pens&eacute; du jour</b> est tr&egrave;s simple &agrave; utiliser. Il vous offre plusieurs options d'utilisation: il s'agit d'un <i>Widget</i> que vous pouvez facilement param&eacute;trer selon  vos besoins; et d'un syst&egrave;me de <i>Shorcodes</i> pour pouvoir ins&eacute;rer les proverbes et les citations dans vos articles et vos pages.
+</p>
+
+<h3>Le Widget </h3>
+Cette extension met &agrave; votre disposition le widget <b>Pens&eacute; du jour</b>, pour l'utiliser  allez &agrave; '<b>Apparences</b>' puis '<b>Widgets</b>' et retrouvez le widget '<b>Pens&eacute;e du jour</b>'. Glissez le widget dans une des zones de widgets, et configurez le &agrave; votre choix.
+
+<h3>Les Shortcodes </h3>
+Cette extention a mis en place un syst&egrave;me de <i>Shorcodes</i> pour pouvoir ins&eacute;rer les proverbes et les citations dans vos articles et vos pages. Ces shortcodes sont :
+<br/>
+<ul>
+<li> <span class="shortcode">[pensee type="1"]</span>  : Pour afficher le proverbe du jour.</li>
+<li> <span class="shortcode">[pensee type="2"]</span>  : Pour afficher &agrave; chaque fois un proverbe diff&eacute;rent de fa&ccedil;on al&eacute;atoire.</li>
+<li> <span class="shortcode">[pensee type="3"]</span>  : Pour afficher la citation du jour .</li>
+<li> <span class="shortcode">[pensee type="4"]</span>  : Pour afficher &agrave; chaque fois une citation diff&eacute;rente de fa&ccedil;on al&eacute;atoire.</li>
+
+</ul>
+</div>
+EOT;
+    echo $strOutput;
 }
 ?>

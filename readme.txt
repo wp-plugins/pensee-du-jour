@@ -10,17 +10,18 @@ License: GPLv2 or later
 Permet d'afficher sur votre site ou votre blog des proverbes et des citations c&eacute;l&egrave;bres.
 == Description ==
 
-Permet d'ajouter &agrave; votre site des proverbes et des citations issus du site Baoyam Sagesse : www.baoyam.com. Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citation de fa&ccedil;on al&eacute;atoire.
+Permet d'ajouter &agrave; votre site des proverbes et des citations issus du site Baoyam Sagesse : www.baoyam.com. Ce plug-in installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citation de fa&ccedil;on al&eacute;atoire. Vous disposez d'un syst&egrave;me de Shorcodes pour pouvoir ins&eacute;rer les proverbes et les citations dans vos articles et vos pages.
 
 
 == Installation ==
 
-1. D&eacute;zippez le fichier
-2. Copiez le dossier 'pensee-du-jour'  dans le dossier des plugins de votre site Web (/wp-content/plugins/). 
-3. Allez &agrave; 'Extensions' et activez  'Pens&eacute;e du jour'. 
-4. Allez &agrave; 'Apparences' puis 'Widgets' et retrouvez le widget 'Pens&eacute;e du jour'.
-5. Glissez le widget dans une des zones de widgets, et configurez le &agrave; votre choix .
-C'est tout !
+D&eacute;zippez le fichier
+Copiez le dossier 'pensee-du-jour'  dans le dossier des plugins de votre site Web (/wp-content/plugins/). 
+Allez &agrave; 'Extensions' et activez  'Pens&eacute;e du jour'. 
+Allez &agrave; 'Apparences' puis 'Widgets' et retrouvez le widget 'Pens&eacute;e du jour'.
+Glissez le widget dans une des zones de widgets, et configurez le &agrave; votre choix .
+
+Pour utiliser les shortcodes, consultez l'aide en allant &agrave; 'R&eacute;glages' puis 'Pens&eacute;e du jour' .
 
 == Frequently Asked Questions ==
 
@@ -36,7 +37,13 @@ Reponse
 
 3. L'extension actv&ecaure;e.
 
+4. Page de configuration.
+
 == Changelog ==
+
+= 2.0 = 
+* Ajout de shorcodes
+* Ajout d'une page de r&eacute;glages
 
 = 1.0 = 
 * Sp&eacute;cifaction de la licence  GPL v2 ou sup&eacute;rieure
@@ -47,4 +54,4 @@ Reponse
 
 == Upgrade Notice ==
 
-No notice
+La verion 2.0 est disponible
