@@ -1,7 +1,7 @@
 <?php
    /*
    Plugin Name: Pens&eacute;e du jour
-   Plugin URI: http://api.baoyam.com/wordpress/plugin/
+   Plugin URI: http://api.baoyam.com/wordpress/
    Description: Permet d'afficher sur votre site ou votre blog des proverbes et des citations c&eacute;l&egrave;bres.</a>. Ce extension installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citations de fa&ccedil;on al&eacute;atoire.
    Version: 2.0
    Author: Dezmonde Agence Web
