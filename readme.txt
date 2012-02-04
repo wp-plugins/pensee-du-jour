@@ -1,6 +1,6 @@
 === Pens&eacute;e du jour ===
 Contributors: edmond tiendrebeogo, dezmonde, dezmonde agence web
-Donate link: http://api.baoyam.com/wordpress/faire-un-don/
+Donate link: http://api.baoyam.com/faire-un-don/
 Tags: proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
 Requires at least: 2.2.0
 Tested up to: 3.3.1
