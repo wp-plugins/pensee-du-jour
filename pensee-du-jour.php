@@ -7,6 +7,7 @@
    Author: Dezmonde Agence Web
    Author URI: http://www.dezmonde.net
    License: GPL2 or later
+   Tages: shortcode, sidebar, post, widget, wpmu, multi-site, proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
    */
    
     /*
