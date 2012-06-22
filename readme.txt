@@ -3,7 +3,7 @@ Contributors: edmond tiendrebeogo, dezmonde, <a href="http://www.dezmonde.net"><
 Donate link: http://api.baoyam.com/faire-un-don/
 Tags: shortcode, sidebar, post, widget, wpmu, multi-site, proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
 Requires at least: 2.2.0
-Tested up to: 3.4 
+Tested up to: 3.4
 Stable tag: 3.4
 License: GPLv2 or later
 
