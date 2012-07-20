@@ -229,4 +229,6 @@ Cette extention a mis en place un syst&egrave;me de <i>Shorcodes</i> pour pouvoi
 EOT;
     echo $strOutput;
 }
+
+//////////
 ?>
