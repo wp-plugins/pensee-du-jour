@@ -1,5 +1,5 @@
 === Pens&eacute;e du jour ===
-Contributors: edmond tiendrebeogo, dezmonde, <a href="http://www.dezmonde.net"></a>dezmonde agence web</a>
+Contributors: edmond-tiendrebeogo, dezmonde, <a href="http://www.dezmonde.net"></a>dezmonde agence web</a>
 Donate link: http://api.baoyam.com/faire-un-don/
 Tags: shortcode, sidebar, post, widget, wpmu, multi-site, proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
 Requires at least: 2.2.0
