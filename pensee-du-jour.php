@@ -4,7 +4,7 @@
    Plugin URI: http://api.baoyam.com/wordpress/
    Description: Permet d'afficher sur votre site ou votre blog des proverbes et des citations c&eacute;l&egrave;bres.</a>. Ce extension installe un widget permetant d'afficher sur votre site le proverbe ou la citation du jour. Vous pouvez aussi afficher des proverbes ou des citations de fa&ccedil;on al&eacute;atoire.
    Version: 2.0
-   Author: Dezmonde Agence Web
+   Author: edmond-tiendrebeogo
    Author URI: http://www.dezmonde.net
    License: GPL2 or later
    Tages: shortcode, sidebar, post, widget, wpmu, multi-site, proverbe, citataion, proverbe du jour, citation du jour, proverbe al&eacute;aoire, ciatation al&eacute;aoire
